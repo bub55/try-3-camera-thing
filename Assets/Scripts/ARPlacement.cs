@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using TMPro;
 
 public class ARPlacement : MonoBehaviour
 {
-
+    public GameObject[] characterPrefabs;
+    int selectedCharacter = PlayerPrefs.GetInt("selectedCharacter");
     public GameObject arObjectToSpawn;
     public GameObject placementIndicator;
     private GameObject spawnedObject;
@@ -17,6 +19,7 @@ public class ARPlacement : MonoBehaviour
     void Start()
     {
         aRRaycastManager = FindObjectOfType<ARRaycastManager>();
+        arObjectToSpawn = characterPrefabs[selectedCharacter];
     }
 
     // need to update placement indicator, placement pose and spawn 
@@ -61,6 +64,7 @@ public class ARPlacement : MonoBehaviour
 
     void ARPlaceObject()
     {
+        
         spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
     }
 

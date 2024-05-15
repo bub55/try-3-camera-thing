@@ -28,6 +28,5 @@ public class CharacterSelection : MonoBehaviour
 	{
 		PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
 		SceneManager.LoadScene("SampleScene");
-		//SceneManager.LoadScene(1, LoadSceneMode.Single);
 	}
 }

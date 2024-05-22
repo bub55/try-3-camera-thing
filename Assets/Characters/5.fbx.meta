@@ -3,7 +3,37 @@ guid: 97358ef847828be49a0d41d14d1c2a33
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CHROME
+    second: {fileID: 2100000, guid: f30cdee7f18b72e4da1a3e55b32b948e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FABRIC
+    second: {fileID: 2100000, guid: 5fbc92785436f5f4995f397b994c0b0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FABRIC_DARK
+    second: {fileID: 2100000, guid: a87cc4408ad93ef40b2a256e991330a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RUBBER
+    second: {fileID: 2100000, guid: 009eae31433b2b14186ef3987d9e6948, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: STEEL
+    second: {fileID: 2100000, guid: d6581c5ee8f64984da894409a8801b1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: STEEL_BLACK
+    second: {fileID: 2100000, guid: 74dfae470a389a4449775b49b3d55b60, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

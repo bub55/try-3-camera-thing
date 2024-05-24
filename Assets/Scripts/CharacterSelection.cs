@@ -27,6 +27,6 @@ public class CharacterSelection : MonoBehaviour
 	public void StartGame()
 	{
 		PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
-		SceneManager.LoadScene("AR Placement");
+		SceneManager.LoadScene("AR_Placement");
 	}
 }

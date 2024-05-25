@@ -292,7 +292,8 @@ MonoBehaviour:
   - {fileID: 8268467841199257485, guid: ebe6ae3eea8918d44a6b052d030e7338, type: 3}
   - {fileID: 8139194457345366421, guid: 35345bf2892a8d84d8b766b46898826d, type: 3}
   - {fileID: 3835226720462517888, guid: 875226994f3cc384f979e0f7638521fe, type: 3}
-  - {fileID: 2626282965067136461, guid: ac5c9256549b10b40a103b38b4c7733d, type: 3}
+  - {fileID: 6627507347709366629, guid: f81def89742846447896df19f0632acc, type: 3}
+  - {fileID: 3202520741062565692, guid: 9c9fc82b37286b943abed25d2b69920a, type: 3}
   arObjectToSpawn: {fileID: 6974378571274051269, guid: 03a42c808e089fa45b8b301c8f698e87,
     type: 3}
   placementIndicator: {fileID: 0}

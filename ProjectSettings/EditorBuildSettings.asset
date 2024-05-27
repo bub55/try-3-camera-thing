@@ -9,14 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Start_Screen.unity
     guid: 75712d331adee3b469c7e11f4335c1f7
   - enabled: 1
-    path: Assets/Scenes/selection.unity
+    path: Assets/Scenes/selection_furniture.unity
     guid: 64ce634a87a9b1a4e972c4793fe1bc58
   - enabled: 1
-    path: Assets/Scenes/AR_Placement.unity
+    path: Assets/Scenes/AR_Placement_Furniture.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/game.unity
     guid: d4c867b60215b044b8de700122ca6db8
+  - enabled: 1
+    path: Assets/Scenes/Select_path.unity
+    guid: 5a1370b9a30455e4f841d09808fbcf32
+  - enabled: 1
+    path: Assets/Scenes/AR_Placement_other_stuff.unity
+    guid: 8163790a0e328b24ab2f2bc5ad2e2c68
+  - enabled: 1
+    path: Assets/Scenes/selection_other_stuff.unity
+    guid: cb1a246d9d63c26429bcaeb1e82adc36
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

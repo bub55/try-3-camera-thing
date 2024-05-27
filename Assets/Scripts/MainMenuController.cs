@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("selection");
+        SceneManager.LoadScene("Select_path");
     }
 
 }

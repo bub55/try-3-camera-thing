@@ -5,10 +5,10 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using TMPro;
 
-public class ARPlacement : MonoBehaviour
+public class AR_Placement : MonoBehaviour
 {
     public GameObject[] characterPrefabs;
-    int selectedCharacter = PlayerPrefs.GetInt("selectedCharacter");
+    int selectedCharacter;
     public GameObject arObjectToSpawn;
     public GameObject placementIndicator;
     private GameObject spawnedObject;
@@ -18,6 +18,7 @@ public class ARPlacement : MonoBehaviour
 
     void Start()
     {
+        selectedCharacter = PlayerPrefs.GetInt("selectedCharacter");
         aRRaycastManager = FindObjectOfType<ARRaycastManager>();
         arObjectToSpawn = characterPrefabs[selectedCharacter];
     }

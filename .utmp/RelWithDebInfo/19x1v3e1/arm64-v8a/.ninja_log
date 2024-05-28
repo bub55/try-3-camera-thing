@@ -1,0 +1,9 @@
+# ninja log v5
+39	4596	7385480471260292	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	ee342353061ca6b6
+16	4649	7385480471699586	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	cf169e806df95841
+48	4693	7385480472727419	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	788242718d0c120a
+24	4987	7385480475675839	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	7e749882e2e0fa0b
+32	5395	7385480479761439	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	93c6f66e32440946
+1	5636	7385480481896769	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	509c370a759c9ced
+4604	6230	7385480488269631	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4886af5ca634274
+6232	6513	7385480490292181	C:/Users/Christopher/unity projects/try 3 camera thing/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/19x1v3e1/obj/arm64-v8a/libgame.so	5b6e1ef3de14b675

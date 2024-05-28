@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.EventSystems; // Add this line
 using TMPro;
 
 public class AR_Placement : MonoBehaviour
@@ -26,20 +27,24 @@ public class AR_Placement : MonoBehaviour
     // need to update placement indicator, placement pose and spawn 
     void Update()
     {
-        if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        // Check if any UI element is being touched
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
+        if (spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             ARPlaceObject();
         }
 
-
         UpdatePlacementPose();
         UpdatePlacementIndicator();
-
-
     }
+
     void UpdatePlacementIndicator()
     {
-        if(spawnedObject == null && placementPoseIsValid)
+        if (spawnedObject == null && placementPoseIsValid)
         {
             placementIndicator.SetActive(true);
             placementIndicator.transform.SetPositionAndRotation(PlacementPose.position, PlacementPose.rotation);
@@ -57,7 +62,7 @@ public class AR_Placement : MonoBehaviour
         aRRaycastManager.Raycast(screenCenter, hits, TrackableType.Planes);
 
         placementPoseIsValid = hits.Count > 0;
-        if(placementPoseIsValid)
+        if (placementPoseIsValid)
         {
             PlacementPose = hits[0].pose;
         }
@@ -65,9 +70,6 @@ public class AR_Placement : MonoBehaviour
 
     void ARPlaceObject()
     {
-        
         spawnedObject = Instantiate(arObjectToSpawn, PlacementPose.position, PlacementPose.rotation);
     }
-
-
 }
